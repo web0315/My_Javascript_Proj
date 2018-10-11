@@ -27,6 +27,16 @@ $(".question1").children().eq(0);
 //3
 $(".content").find(".first-question-title");
 //4
-$(".answer").siblings(".first-question-title")
+$(".answer").siblings(".first-question-title");
 
 //jQuery: add or remove
+
+//add :append/appendTo prepend/prependTo after/insertAfter before/insertBefore
+$("document.body").append('<div>xxx...</div>');
+$("document.body").prepend('<div>xxx...</div>');
+$('<div>xxx...</div>').appendTo("document.body");
+$('<div>xxx...</div>').prependTo("document.body");
+
+//remove :empty remove
+$("div:last-child").remove() //remove itself
+$("div:last-child").empty() //remove childNodes
