@@ -28,3 +28,5 @@ $(".question1").children().eq(0);
 $(".content").find(".first-question-title");
 //4
 $(".answer").siblings(".first-question-title")
+
+//jQuery: add or remove
