@@ -1,0 +1,36 @@
+/* 重置样式 */
+* {
+    box-sizing: border-box;
+}
+
+ul, li, p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input {
+    width: 180px;
+    height: 30px;
+    margin: 30px;
+}
+
+/* autocomplete 框 */
+.autocomplete {
+    position: fixed;
+    width: 180px;
+    left: 10px;
+    background: #eee;
+    top: 50px;
+}
+.autocomplete .item {
+    border-bottom: 1px solid #dfdfdf;
+    cursor: pointer;
+    color: #999;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+.autocomplete .item:hover {
+    color: #333;
+}
