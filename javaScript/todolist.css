@@ -1,0 +1,102 @@
+/* 重置样式 */
+* {
+    box-sizing: border-box;
+}
+
+ul, li, p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#todoList {
+    width: 80%;
+    max-width: 460px;
+    margin: 20px auto;
+}
+
+/* ToDoList 头部 */
+.todoList-header {
+    background-color: #333;
+    padding: 10px 30px 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.todoList-operation {
+    position: relative;
+    padding-right: 110px;
+}
+
+/* 设置输入框的样式 */
+.todoList-header input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+/* 设置添加按钮的样式 */
+.todoList-header button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 110px;
+    border: none;
+    background: #d9d9d9;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.todoList-header button:hover {
+    background-color: #bbb;
+}
+
+
+/*任务item样式*/
+.todoList-content  li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 50px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+/* 设置hover时的背景颜色 */
+.todoList-content li:hover {
+    background: #ddd;
+}
+
+/* 任务item完成状态 */
+.todoList-content li.checked {
+    text-decoration: line-through;
+}
+
+
+.todoList-content li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #0eb312;
+    border-style: solid;
+    border-width: 0 4px 4px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 16px;
+    width: 7px;
+}
+/* 关闭按钮 */
+.todoList-content .close {
+    position: absolute;
+    color: #000;
+    right: 0;
+    top: 0;
+    padding: 12px 15px 12px 15px;
+}
+
+.todoList-content .close:hover {
+    background-color: #f44336;
+    color: white;
+}

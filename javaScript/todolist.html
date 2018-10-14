@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>实现todoList</title>
+    <link rel="stylesheet" type="text/css" href="./todolist.css">
+</head>
+<body>
+    <!-- 请在index.js文件中完成练习	-->
+    <div id="todoList">
+        <div class="todoList-header">
+          <h2>待办事项</h2>
+          <div class="todoList-operation">
+            <input type="text" id="add-task-input" placeholder="任务名称">
+            <button id="js-add-task">添加任务</button>
+          </div>
+        </div>
+        <ul class="todoList-content">
+          <li class="task">
+              <p lass="text">完成 30 分钟腹肌撕裂者训练</p>
+              <span class="close">x</span>
+          </li>
+          <li class="task checked">
+              <p>阅读《JavaScript程序设计》30分钟</p>
+              <span class="close">x</span>
+          </li>
+          <li class="task">
+              <p>准备明天演讲 ppt </p>
+              <span class="close">x</span>
+          </li>
+          <li class="task">
+              <p>完成今天的学习任务</p>
+              <span class="close">x</span>
+          </li>
+          <li class="task">
+              <p>看一部美剧</p>
+              <span class="close">x</span>
+          </li>
+        </ul>
+    </div>
+     <!-- 引入jQuery-->
+    <script src="https://7.url.cn/edu/jslib/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./todolist.js"></script>
+</body>
+</html>
+

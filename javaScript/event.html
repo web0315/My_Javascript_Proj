@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>编写一个 jQuery 事件监听器</title>
+    <style>
+      #editor {
+        width: 90%;
+        display: block;
+        height: 300px;
+        margin: 20px auto;
+        padding: 10px;
+        font-size: 14px;
+        line-height: 1.5;
+        background-color: '#fff';
+        color: '#000';
+      }
+      #operation {
+        text-align: center
+      }
+      button {
+        background: #fff;
+        color: #000;
+        border: 2px solid #000;
+        padding: 10px;
+        border-radius: 4px;
+      }
+    </style>
+</head>
+<body>
+    <!-- 请在index.js文件中完成练习	-->
+    <textarea id="editor">
+      经过刚才的学习，相信你对Next学位有一定的了解了。所谓千里之行，始于足下，现在我们着手开始第一份项目作业吧：）
+      项目说明
+      在开始专业学习前，我们想先听听你的声音，所以希望你根据以下两点写一篇简单的感想：
+      分享一下你想成为前端工程师的初衷是什么；
+      写下你对未来职业的规划，包括你的阶段性目标、你最终希望达到的目标；
+      建议你将自己的真实想法写下来，这有助于我们进一步了解你。你的作业将会由我们Imweb的技术专家团来审阅，他们会结合自己的经验，给你提出一些有价值的建议。
+      项目审阅规则
+      收到你的项目作业后，我们会在7天内将审阅结果反馈给你，请届时返回此页面进行查看。
+    </textarea>
+    <div id="operation">
+      <button id="js-add-fontsize">编辑器文字变大</button>
+      <button id="js-change-bg">编辑器颜色变暗</button>
+      <button id="js-toggle-opacity">显示/隐藏编辑器</button>
+    </div>
+    <!-- 引入jQuery-->
+    <script src="https://7.url.cn/edu/jslib/jquery/1.9.1/jquery.min.js"></script>
+</body>
+</html>
